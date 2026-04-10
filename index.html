@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نموذج لبورتفوليو دكنور </title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- خط -->
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ================= NAVBAR ================= -->
+<header class="navbar">
+  <div class="logo" data-ar="د. محمد علاء" data-en="Dr. Mohamed Alaa">
+    د. محمد علاء
+  </div>
+
+  <nav class="nav-links" id="navLinks">
+    <a href="#" class="active" data-ar="الرئيسية" data-en="Home">الرئيسية</a>
+    <a href="#" data-ar="عن الطبيب" data-en="About">عن الطبيب</a>
+    <a href="#" data-ar="الخدمات" data-en="Services">الخدمات</a>
+    <a href="#" data-ar="الشهادات" data-en="Certificates">الشهادات</a>
+    <a href="#" data-ar="معرض الصور" data-en="Gallery">معرض الصور</a>
+    <a href="#" data-ar="التواصل" data-en="Contact">التواصل</a>
+  </nav>
+
+  <div class="nav-actions">
+    <button class="lang" onclick="toggleLanguage()">EN</button>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+  </div>
+</header>
+
+<!-- hero -->
+<section class="hero" id="home">
+
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+
+    <span class="badge" data-ar="موثوق منذ 2005" data-en="Trusted since 2005">
+      موثوق منذ 2005
+    </span>
+
+    <h1 data-ar="د. محمد علاء" data-en="Dr. Mohamed Alaa">
+      د. محمد علاء
+    </h1>
+
+    <h2 data-ar="رعاية أسنان متقدمة" data-en="Advanced Dental Care">
+      رعاية أسنان متقدمة
+    </h2>
+
+    <p data-ar="نقدم أحدث تقنيات طب الأسنان مع رعاية دقيقة لضمان ابتسامة صحية وجميلة."
+       data-en="We provide modern dental care with precision for a healthy and beautiful smile.">
+      نقدم أحدث تقنيات طب الأسنان مع رعاية دقيقة لضمان ابتسامة صحية وجميلة.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#" class="btn primary" data-ar="احجز موعد" data-en="Book Appointment">احجز موعد</a>
+      <a href="#" class="btn outline" data-ar="الخدمات" data-en="Services">الخدمات</a>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- about -->
+<section class="about" id="about">
+
+  <div class="about-container">
+
+    <!-- الصورة -->
+    <div class="about-image">
+      <img src="doctor.jpeg" alt="doctor">
+    </div>
+
+    <!-- النص -->
+    <div class="about-content">
+
+      <span class="section-badge" data-ar="عن الطبيب" data-en="About Doctor">
+        عن الطبيب
+      </span>
+
+      <h2 data-ar="د. محمد علاء" data-en="Dr. Mohamed Alaa">
+        د. محمد علاء
+      </h2>
+
+      <p data-ar="طبيب أسنان متخصص بخبرة أكثر من 15 سنة في تجميل وعلاج الأسنان باستخدام أحدث التقنيات العالمية."
+         data-en="A dental specialist with over 15 years of experience in cosmetic and restorative dentistry using modern techniques.">
+        طبيب أسنان متخصص بخبرة أكثر من 15 سنة في تجميل وعلاج الأسنان باستخدام أحدث التقنيات العالمية.
+      </p>
+
+      <ul class="about-list">
+
+        <li data-ar="✔ خبرة في تجميل الأسنان" data-en="✔ Cosmetic Dentistry Experience">
+          ✔ خبرة في تجميل الأسنان
+        </li>
+
+        <li data-ar="✔ زراعة الأسنان الحديثة" data-en="✔ Modern Dental Implants">
+          ✔ زراعة الأسنان الحديثة
+        </li>
+
+        <li data-ar="✔ علاج بدون ألم" data-en="✔ Painless Treatments">
+          ✔ علاج بدون ألم
+        </li>
+
+        <li data-ar="✔ آلاف الحالات الناجحة" data-en="✔ Thousands of Successful Cases">
+          ✔ آلاف الحالات الناجحة
+        </li>
+
+      </ul>
+
+      <a href="#" class="about-btn" data-ar="احجز استشارة" data-en="Book Consultation">
+        احجز استشارة
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ------services----- -->
+<section class="services" id="services">
+
+  <div class="section-header">
+    <span class="section-badge" data-ar="خدماتنا" data-en="Our Services">خدماتنا</span>
+
+    <h2 data-ar="أفضل رعاية لأسنانك" data-en="Best Care for Your Teeth">
+      أفضل رعاية لأسنانك
+    </h2>
+  </div>
+
+  <div class="services-container">
+
+    <!-- خدمة 1 -->
+    <div class="service-card">
+      <i class="fa-solid fa-tooth icon"></i>
+      <h3 data-ar="تنظيف الأسنان" data-en="Teeth Cleaning">تنظيف الأسنان</h3>
+      <p data-ar="تنظيف احترافي لإزالة الجير والحفاظ على صحة الفم"
+         data-en="Professional cleaning to remove tartar and maintain oral health">
+        تنظيف احترافي لإزالة الجير والحفاظ على صحة الفم
+      </p>
+    </div>
+
+    <!-- خدمة 2 -->
+    <div class="service-card">
+      <i class="fa-solid fa-face-smile icon"></i>
+      <h3 data-ar="تجميل الأسنان" data-en="Cosmetic Dentistry">تجميل الأسنان</h3>
+      <p data-ar="ابتسامة مثالية باستخدام أحدث تقنيات التجميل"
+         data-en="Perfect smile using modern cosmetic techniques">
+        ابتسامة مثالية باستخدام أحدث تقنيات التجميل
+      </p>
+    </div>
+
+    <!-- خدمة 3 -->
+    <div class="service-card">
+      <i class="fa-solid fa-hand-holding-medical icon"></i>
+      <h3 data-ar="علاج اللثة" data-en="Gum Treatment">علاج اللثة</h3>
+      <p data-ar="علاج التهابات اللثة والحفاظ على صحة الفم"
+         data-en="Treating gum disease and maintaining oral health">
+        علاج التهابات اللثة والحفاظ على صحة الفم
+      </p>
+    </div>
+
+    <!-- خدمة 4 -->
+    <div class="service-card">
+      <i class="fa-solid fa-screwdriver-wrench icon"></i>
+      <h3 data-ar="زراعة الأسنان" data-en="Dental Implants">زراعة الأسنان</h3>
+      <p data-ar="حلول دائمة لتعويض الأسنان المفقودة"
+         data-en="Permanent solutions for missing teeth">
+        حلول دائمة لتعويض الأسنان المفقودة
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- certificates -->
+<section class="certificates" id="certificates">
+
+  <div class="section-header">
+    <span class="section-badge" data-ar="الشهادات" data-en="Certificates">الشهادات</span>
+
+    <h2 data-ar="المؤهلات والشهادات الطبية" data-en="Medical Qualifications & Certificates">
+      المؤهلات والشهادات الطبية
+    </h2>
+  </div>
+
+  <div class="certificates-container">
+
+    <!-- شهادة 1 -->
+    <div class="certificate-card">
+      <img src="https://images.unsplash.com/photo-1581091012184-7c2d3c1b3a2d?auto=format&fit=crop&w=600&q=80" alt="Certificate">
+      <div class="overlay">
+        <h3>بكالوريوس طب الأسنان</h3>
+        <p>جامعة القاهرة</p>
+      </div>
+    </div>
+
+    <!-- شهادة 2 -->
+    <div class="certificate-card">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=600&q=80" alt="Certificate">
+      <div class="overlay">
+        <h3>زراعة الأسنان</h3>
+        <p>دورة متقدمة - ألمانيا</p>
+      </div>
+    </div>
+
+    <!-- شهادة 3 -->
+    <div class="certificate-card">
+      <img src="https://images.unsplash.com/photo-1582719478185-2a4f0c5f1a2d?auto=format&fit=crop&w=600&q=80" alt="Certificate">
+      <div class="overlay">
+        <h3>تجميل الأسنان</h3>
+        <p>International Dental Academy</p>
+      </div>
+    </div>
+
+    <!-- شهادة 4 -->
+    <div class="certificate-card">
+      <img src="https://images.unsplash.com/photo-1606813907291-d86ef2b2c6c8?auto=format&fit=crop&w=600&q=80" alt="Certificate">
+      <div class="overlay">
+        <h3>علاج اللثة</h3>
+        <p>Advanced Gum Therapy Course</p>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- clinic -->
+<section class="clinic" id="clinic">
+
+  <div class="section-header">
+    <span class="section-badge" data-ar="العيادة" data-en="Clinic">العيادة</span>
+
+    <h2 data-ar="جولة داخل العيادة" data-en="Inside Our Clinic">
+      جولة داخل العيادة
+    </h2>
+  </div>
+
+  <div class="clinic-gallery">
+
+    <!-- صورة 1 -->
+    <div class="clinic-item">
+      <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=800&q=80" alt="Clinic">
+    </div>
+
+    <!-- صورة 2 -->
+    <div class="clinic-item">
+      <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?auto=format&fit=crop&w=800&q=80" alt="Clinic">
+    </div>
+
+    <!-- صورة 3 -->
+    <div class="clinic-item">
+      <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" alt="Clinic">
+    </div>
+
+    <!-- صورة 4 -->
+    <div class="clinic-item">
+      <img src="https://images.unsplash.com/photo-1598256989800-fe5f95da9787?auto=format&fit=crop&w=800&q=80" alt="Clinic">
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- testimonials -->
+<section class="testimonials" id="testimonials">
+
+  <div class="section-header">
+    <span class="section-badge" data-ar="آراء المرضى" data-en="Testimonials">آراء المرضى</span>
+
+    <h2 data-ar="ماذا يقول مرضانا؟" data-en="What Our Patients Say?">
+      ماذا يقول مرضانا؟
+    </h2>
+  </div>
+
+  <div class="testimonials-container">
+
+    <!-- رأي 1 -->
+    <div class="testimonial-card">
+      <i class="fa-solid fa-quote-right quote-icon"></i>
+
+      <p data-ar="دكتور ممتاز ونتيجة العلاج كانت فوق المتوقع"
+         data-en="Excellent doctor, results exceeded expectations">
+        دكتور ممتاز ونتيجة العلاج كانت فوق المتوقع
+      </p>
+
+      <div class="patient">
+        <img src="https://i.pravatar.cc/100?img=1" alt="">
+        <h4>أحمد علي</h4>
+      </div>
+    </div>
+
+    <!-- رأي 2 -->
+    <div class="testimonial-card">
+      <i class="fa-solid fa-quote-right quote-icon"></i>
+
+      <p data-ar="المكان نظيف والخدمة رائعة جداً"
+         data-en="Very clean clinic and amazing service">
+        المكان نظيف والخدمة رائعة جداً
+      </p>
+
+      <div class="patient">
+        <img src="https://i.pravatar.cc/100?img=2" alt="">
+        <h4>سارة محمد</h4>
+      </div>
+    </div>
+
+    <!-- رأي 3 -->
+    <div class="testimonial-card">
+      <i class="fa-solid fa-quote-right quote-icon"></i>
+
+      <p data-ar="أفضل دكتور أسنان تعاملت معه في حياتي"
+         data-en="Best dentist I’ve ever visited">
+        أفضل دكتور أسنان تعاملت معه في حياتي
+      </p>
+
+      <div class="patient">
+        <img src="https://i.pravatar.cc/100?img=3" alt="">
+        <h4>محمد خالد</h4>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- contact -->
+<section class="contact" id="contact">
+
+  <div class="section-header">
+    <span class="section-badge" data-ar="احجز موعد" data-en="Book Appointment">احجز موعد</span>
+
+    <h2 data-ar="ابدأ رحلتك لابتسامة أفضل" data-en="Start Your Smile Journey">
+      ابدأ رحلتك لابتسامة أفضل
+    </h2>
+  </div>
+
+  <div class="contact-container">
+
+    <!-- الفورم -->
+    <form class="contact-form">
+
+      <div class="input-group">
+        <input type="text" placeholder="الاسم الكامل" required>
+      </div>
+
+      <div class="input-group">
+        <input type="tel" placeholder="رقم الهاتف" required>
+      </div>
+
+      <div class="input-group">
+        <input type="email" placeholder="البريد الإلكتروني (اختياري)">
+      </div>
+
+      <div class="input-group">
+        <textarea placeholder="اكتب شكواك أو سبب الحجز..." rows="5"></textarea>
+      </div>
+
+      <button type="submit">
+        احجز الآن
+      </button>
+
+    </form>
+
+    <!-- معلومات جانبية -->
+    <!-- <div class="contact-info">
+
+      <div class="info-box">
+        <i class="fa-solid fa-location-dot"></i>
+        <p>العيادة: شارع النصر - القاهرة</p>
+      </div>
+
+      <div class="info-box">
+        <i class="fa-solid fa-phone"></i>
+        <p>0100 000 0000</p>
+      </div>
+
+      <div class="info-box">
+        <i class="fa-solid fa-clock"></i>
+        <p>يومياً من 4 م إلى 10 م</p>
+      </div> -->
+
+      <!-- <a class="whatsapp-btn" href="https://wa.me/201000000000" target="_blank">
+        <i class="fa-brands fa-whatsapp"></i>
+        احجز عبر واتساب
+      </a> -->
+
+    </div>
+
+  </div>
+
+</section>
+
+<!-- footer -->
+<footer class="footer">
+
+  <div class="footer-container">
+
+    <!-- عن الدكتور -->
+    <div class="footer-box">
+      <h3>د. أحمد محمد</h3>
+      <p>استشاري طب وتجميل الأسنان نقدم أفضل رعاية لابتسامة صحية وجميلة.</p>
+    </div>
+
+    <!-- روابط سريعة -->
+    <div class="footer-box">
+      <h3>روابط سريعة</h3>
+      <a href="#home">الرئيسية</a>
+      <a href="#about">عن الطبيب</a>
+      <a href="#services">الخدمات</a>
+      <a href="#contact">احجز موعد</a>
+    </div>
+
+    <!-- تواصل -->
+    <div class="footer-box">
+      <h3>تواصل معنا</h3>
+      <p><i class="fa-solid fa-phone"></i> 0100 000 0000</p>
+      <p><i class="fa-solid fa-location-dot"></i> القاهرة - مصر</p>
+      <p><i class="fa-solid fa-clock"></i> 4م - 10م</p>
+    </div>
+
+    <!-- سوشيال -->
+    <div class="footer-box">
+      <h3>تابعنا</h3>
+      <div class="social">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 جميع الحقوق محفوظة | Designed by You</p>
+  </div>
+
+</footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="script.js"></script>
+</body>
+</html>
